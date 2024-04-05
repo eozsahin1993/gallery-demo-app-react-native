@@ -24,6 +24,7 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import GalleryListItem from './components/GalleryListItem';
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -76,6 +77,24 @@ function App(): React.JSX.Element {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
+          <GalleryListItem
+            id="1"
+            title="A Sunday on La Grande Jatte"
+            artist="Georges Seurat"
+            date="French, 1859-1891"
+          />
+          <GalleryListItem
+            id="1"
+            title="A Sunday on La Grande Jatte"
+            artist="Georges Seurat"
+            date="French, 1859-1891"
+          />
+          <GalleryListItem
+            id="1"
+            title="A Sunday on La Grande Jatte"
+            artist="Georges Seurat"
+            date="French, 1859-1891"
+          />
           <Section title="Step One">
             Edit <Text style={styles.highlight}>App.tsx</Text> to change this
             screen and then come back to see your edits.
